@@ -12,6 +12,7 @@ class ProductController
     public function showProducts(): void
     {
         $products = ProductLoader::getAllProducts($this->db);
+        $title = "Products";
         require 'View/infoProducts.php';
     }
 

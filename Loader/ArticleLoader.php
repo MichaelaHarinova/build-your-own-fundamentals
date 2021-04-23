@@ -27,7 +27,7 @@ class ArticleLoader
 
         $article = $handle->fetch();
         if($article === false){
-            throw new error('Article not found');
+            throw new error('404 not found');
         }
         return new article($article['id'], $article['title'], $article['slug'], $article['content']);
     }

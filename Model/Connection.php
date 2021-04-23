@@ -10,7 +10,11 @@ class Connection extends PDO
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
         ];
-
-        parent::__construct('mysql:host=' . DB_HOST . ';dbname=' . DB_NAME, DB_USERNAME, DB_PASSWORD, $driverOptions);
+        try{
+            parent::__construct('mysql:host=' . DB_HOST . ';dbname=' . DB_NAME, DB_USERNAME, DB_PASSWORD, $driverOptions);
+        }catch(error $e){
+            $error= $e->getMessage();
+            require 'View/errorPage.php';
+        }
     }
 }
