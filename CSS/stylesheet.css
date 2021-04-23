@@ -1,0 +1,22 @@
+.th{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+body{
+    background-image: linear-gradient(rgba(154,153,153,0.3), rgba(255,255,255,0)), url("../Img/wallpaperflare.com_wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.logo-image{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+}
+.linkColor{
+    color:purple;
+}
