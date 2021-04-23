@@ -15,7 +15,7 @@ require "includes/header.php";
     <h1 class="text-info">Products</h1>
     <br>
     <main>
-        <table class="table table-sm">
+        <table class="table table-sm tableColor">
             <thead>
             <tr>
                 <th class="th">Name</th>

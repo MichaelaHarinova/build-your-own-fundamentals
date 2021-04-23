@@ -13,7 +13,7 @@ require "includes/header.php";
 <section>
     <h1 class="text-info card-body">Article</h1>
 
-    <article class="card-body" style="width: 60rem;">
+    <article class="card-body tableColor" style="width: 60rem;">
     <h4><?php /** @var Article $articleDetail */ ?>
          <?php echo $articleDetail->getTitle() ?></h4>
     <div>

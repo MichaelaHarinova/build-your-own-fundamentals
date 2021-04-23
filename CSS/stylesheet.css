@@ -20,3 +20,7 @@ body{
 .linkColor{
     color:purple;
 }
+.tableColor{
+    background-color: rgba(126, 170, 174, .3);
+    border-radius: 10px;
+}
